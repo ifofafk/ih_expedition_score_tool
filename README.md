@@ -3,6 +3,11 @@
 tool for idle hero expedition score stastic
 statistical tool of idle hero expedition points 
 
+# 开发语言和环境搭建
+- 项目使用pytho3.8开发，开发ide用的 idea pycharm
+- 你需要知道python的环境搭建，使用pip install 安装依赖包
+- 本地启动运行main方法即可
+
 # 使用说明
 - 该项目运行在window下，属于个人娱乐项目。
 - 代码使用python语言，在chatgpt4的帮助下编写的
