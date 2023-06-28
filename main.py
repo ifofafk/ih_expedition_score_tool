@@ -13,8 +13,8 @@ from time import sleep
 
 # TODO 使用时添加
 # 百度ORC 通用的api key
-API_KEY = "********"
-SECRET_KEY = "***********"
+API_KEY = "GxavEvGtziLkwYpCWHRFNDot"
+SECRET_KEY = "n1xB8sBGY8hAldsxqbV8R4ruEvf58jdI"
 
 
 # 按n切割array
@@ -244,8 +244,8 @@ root.title("远征积分转excel工具")
 root.geometry("500x200")
 
 # Center the window on the screen
-window_width = 300
-window_height = 100
+window_width = 500
+window_height = 300
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
 position_top = int(screen_height / 2 - window_height / 2)
@@ -254,10 +254,24 @@ root.geometry(f"{window_width}x{window_height}+{position_right}+{position_top}")
 
 # Create a text entry field for the folder path
 input_box = ttk.Entry(root, width=120)
-input_box.pack(padx=30, pady=20)
+input_box.pack(padx=50, pady=20)
+
+
+# 创建使用说明的文本框
+text = tk.Text(root, height=10, width=40)
+description = '使用说明：\n' \
+              '1. 请输入文件夹路径。要求：1个文件夹(公会名称)只包含jpg、png、jpeg格式的图片 或者 1个大文件夹包含若干个子文件夹(公会名称)，子文件夹包含指定格式图片 \n' \
+              '2. 点击转换后出现未响应莫慌，去你填写的文件夹路径等待若干秒出现excel'
+text.insert(tk.END, description)
+text.config(state=tk.DISABLED)  # 设置文本框为不可编辑
+text.pack()
+
+# 创建一个空标签作为间隔
+tk.Label(root, height=1).pack()  # 一个字符大约15px，所以高度设置为50/15=3
+
 
 # Create a button that calls func1 when clicked
-button = tk.Button(root, text='转换', command=ui)
+button = tk.Button(root, text='转换', height=30//15, width=70//8, command=ui)
 button.pack()
 
 # Start the Tk event loop
