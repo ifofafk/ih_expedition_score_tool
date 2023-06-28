@@ -7,6 +7,9 @@ statistical tool of idle hero expedition points
 - 项目使用pytho3.8开发，开发ide用的 idea pycharm
 - 你需要知道python的环境搭建，使用pip install 安装依赖包
 - 本地启动运行main方法即可
+- python的pip切换清华源 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pyinstaller
+- 下载pyinstatller  [参考](https://blog.csdn.net/libaineu2004/article/details/112612421)
+- Pyinstaller -F -w -i chengzi.ico py_word.py
 
 # 使用说明
 - 该项目运行在window下，属于个人娱乐项目。
